@@ -15,13 +15,14 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "../../assets/jss/material-kit-react/components/headerStyle.js";
-import logo from "../../assets/img/micrologo.png";
+
 
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener("scroll", headerColorChange);
@@ -62,6 +63,7 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = <Button href="/" className={classes.title}>{brand}</Button>;
+  const logo  = require("../../assets/img/micrologo.png");
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
