@@ -16,10 +16,6 @@ import CardFooter from "../../../MaterialKitComponets/Card/CardFooter.js";
 
 import styles from "../../../assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "../../../assets/img/faces/avatar.jpg";
-import team2 from "../../../assets/img/faces/christian.jpg";
-import team3 from "../../../assets/img/faces/kendall.jpg";
-
 const useStyles = makeStyles(styles);
 
 export default function TeamSection() {
@@ -29,6 +25,11 @@ export default function TeamSection() {
     classes.imgRoundedCircle,
     classes.imgFluid
   );
+
+  const team1 = require( "../../../assets/img/faces/avatar.jpg");
+  const team2 = require( "../../../assets/img/faces/christian.jpg");
+  const team3 = require( "../../../assets/img/faces/kendall.jpg");
+
   return (
     <div className={classes.section}>
       <h2 className={classes.title}>Here is our team</h2>
