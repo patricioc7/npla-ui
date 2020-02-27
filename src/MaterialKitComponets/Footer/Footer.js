@@ -37,7 +37,7 @@ export default function Footer(props) {
                 className={classes.block}
                 target="_blank"
               >
-                Poiesis Arte Joven
+                NPLA
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -47,24 +47,6 @@ export default function Footer(props) {
                 target="_blank"
               >
                 Acerca de nosotros
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
               </a>
             </ListItem>
           </List>

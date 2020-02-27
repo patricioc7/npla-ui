@@ -15,6 +15,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "../../assets/jss/material-kit-react/components/headerStyle.js";
+import logo from "../../assets/img/micrologo.png";
 
 const useStyles = makeStyles(styles);
 
@@ -65,6 +66,7 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
+        <img src={logo} alt="..." md={12}/>
         <div className={classes.flex}>
           {leftLinks !== undefined ? (
             <Hidden smDown implementation="css">

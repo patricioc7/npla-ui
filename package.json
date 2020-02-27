@@ -51,6 +51,7 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-throw-expressions": "^7.2.0",
-    "babel-plugin-styled-components": "^1.10.6"
+    "babel-plugin-styled-components": "^1.10.6",
+    "image-webpack-loader": "^6.0.0"
   }
 }

@@ -4,7 +4,7 @@ import {
     Route,
 } from 'react-router-dom';
 import Navigation from '../Navigation';
-import LandingPage from '../Landing';
+import LandingPage from '../LandingPage/LandingPage';
 import SignUpPage from '../SignUp';
 import SignInPage from '../SignIn';
 import Profile from '../Profile';
@@ -22,8 +22,7 @@ const App = (props) => {
         <Router>
             <div>
                 <Navigation user={props.auth.user.name}/>
-                <div className={'maindiv'}>
-                    <hr />
+                <div>
                     <Route exact path={ROUTES.LANDING} component={LandingPage} />
                     <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
                     <Route path={ROUTES.SIGN_IN} component={SignInPage} />
@@ -33,7 +32,7 @@ const App = (props) => {
                     <Route path={ROUTES.NEWPOST} component={NewPost} />
                     <Route path={ROUTES.USERVIEW} component={Profile} />
 
-                    </div>
+                </div>
                 <Footer/>
                 </div>
         </Router>

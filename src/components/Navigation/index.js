@@ -10,6 +10,7 @@ import Header from "../../MaterialKitComponets/Header/Header";
 
 import styles from "../../assets/jss/material-kit-react/views/componentsSections/navbarsStyle.js";
 import SignOutButton from "../SignOut";
+import HeaderLinks from "../../MaterialKitComponets/Header/HeaderLinks";
 const useStyles = makeStyles(styles);
 
 
@@ -27,81 +28,15 @@ const NavigationAuth = (props) => {
 
     return(
         <Header
-            color="primary"
+            color="dark"
             fixed
-            brand = "Poiesis Arte Joven"
+            brand = "Nuevo Paradigma Liberación Animal"
             changeColorOnScroll={{
-                height: 400,
+                height: 100,
                 color: "white"
             }}
-            leftLinks={
-                <List className={classes.list}>
-                    <ListItem className={classes.listItem}>
-                        <Button
-                            href="#pablo"
-                            className={classes.navLink}
-                            onClick={e => e.preventDefault()}
-                            color="transparent"
-                        >
-                            Palabra
-                        </Button>
-                    </ListItem>
-                    <ListItem className={classes.listItem}>
-                        <Button
-                            href="#pablo"
-                            className={classes.navLink}
-                            onClick={e => e.preventDefault()}
-                            color="transparent"
-                        >
-                            Música
-                        </Button>
-                    </ListItem>
-                    <ListItem className={classes.listItem}>
-                        <Button
-                            href="#pablo"
-                            className={classes.navLink}
-                            onClick={e => e.preventDefault()}
-                            color="transparent"
-                        >
-                            Imágen
-                        </Button>
-                    </ListItem>
-                </List>
-            }
-            rightLinks={
-                <List className={classes.list}>
-                    <ListItem className={classes.listItem}>
-                        <Button
-                            href={ROUTES.NEWPOST}
-                            className={classes.navLink}
-                            color="transparent"
-                        >
-                            Nuevo Post
-                        </Button>
-                    </ListItem>
-                    <ListItem className={classes.listItem}>
-                        <CustomDropdown
-                            left
-                            caret={false}
-                            hoverColor="black"
-                            dropdownHeader="Dropdown Header"
-                            buttonText={
-                                props.user
-                            }
-                            buttonProps={{
-                                className:
-                                    classes.navLink + " " + classes.imageDropdownButton,
-                                color: "transparent"
-                            }}
-                            dropdownList={[
-                                "Me",
-                                "Settings and other stuff",
-                                <SignOutButton />
-                            ]}
-                        />
-                    </ListItem>
-                </List>
-            }
+            rightLinks={<HeaderLinks />}
+
         />
     )
 }
@@ -110,71 +45,16 @@ const NavigationNonAuth = () => {
     const classes = useStyles();
     return(
         <Header
-            color="white"
+            color="dark"
             fixed
-            brand = "Poiesis Arte Joven"
+            brand = "Nuevo Paradigma Liberación Animal"
             changeColorOnScroll={{
-                height: 400,
+                height: 100,
                 color: "white"
             }}
-            leftLinks={
-                <List className={classes.list}>
-                    <ListItem className={classes.listItem}>
-                        <Button
-                            href="#pablo"
-                            className={classes.navLink}
-                            onClick={e => e.preventDefault()}
-                            color="transparent"
-                        >
-                            Palabra
-                        </Button>
-                    </ListItem>
-                    <ListItem className={classes.listItem}>
-                        <Button
-                            href="#pablo"
-                            className={classes.navLink}
-                            onClick={e => e.preventDefault()}
-                            color="transparent"
-                        >
-                            Música
-                        </Button>
-                    </ListItem>
-                    <ListItem className={classes.listItem}>
-                        <Button
-                            href="#pablo"
-                            className={classes.navLink}
-                            onClick={e => e.preventDefault()}
-                            color="transparent"
-                        >
-                            Imágen
-                        </Button>
-                    </ListItem>
-                </List>
-            }
-            rightLinks={
-                <List className={classes.list}>
-                    <ListItem className={classes.listItem}>
-                        <Button
-                            href={ROUTES.SIGN_IN}
-                            className={classes.navLink}
-                            color="transparent"
-                        >
-                            Logueate
-                        </Button>
-                    </ListItem>
-                    <ListItem className={classes.listItem}>
-                        <Button
-                            href={ROUTES.SIGN_UP}
-                            className={classes.navLink}
-                            color="transparent"
-                        >
-                            Registrate
-                        </Button>
-                    </ListItem>
-                </List>
-            }
-        />
-    )
+            rightLinks={<HeaderLinks />}
+
+        />)
 
 }
 
