@@ -42,14 +42,6 @@ export default function LandingPage(props) {
     const [modal, setModal] = React.useState(false);
     const classes = useStyles();
   const { ...rest } = props;
-    const handleOpen = () => {
-        setOpen(true);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
-    };
-
     return (
     <div>
 
