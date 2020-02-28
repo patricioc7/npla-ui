@@ -49,16 +49,6 @@ export default function HeaderLinks(props) {
                 />
             </ListItem>
             <ListItem className={classes.listItem}>
-                <Button
-                    href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
-                    color="transparent"
-                    target="_blank"
-                    className={classes.navLink}
-                >
-                   Contactate
-                </Button>
-            </ListItem>
-                <ListItem className={classes.listItem}>
                 <Tooltip
                     id="instagram-facebook"
                     title="Seguinos en Facebook"

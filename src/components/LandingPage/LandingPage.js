@@ -12,25 +12,13 @@ import GridItem from "../../MaterialKitComponets/Grid/GridItem.js";
 import Button from "../../MaterialKitComponets/CustomButtons/Button.js";
 import Parallax from "../../MaterialKitComponets/Parallax/Parallax.js";
 
-import withStyles from "@material-ui/core/styles/withStyles";
 import Slide from "@material-ui/core/Slide";
 import Dialog from "@material-ui/core/Dialog";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogActions from "@material-ui/core/DialogActions";
-import IconButton from "@material-ui/core/IconButton";
-import Close from "@material-ui/icons/Close";
 
 import styles from "../../assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.js";
-import TeamSection from "./Sections/TeamSection.js";
-import LogoSection from "./Sections/LogoSection.js";
 import WorkSection from "./Sections/WorkSection.js";
-import Modal from "@material-ui/core/Modal";
-
-const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
@@ -90,8 +78,6 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-            {/* <ProductSection /> */}
-            {/* <TeamSection /> */}
           <WorkSection />
         </div>
       </div>
